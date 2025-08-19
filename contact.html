@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-areas: 
+            "header header"
+            "main aside"
+            "footer footer"
+            ;
+            grid-template-columns: 85% 15%;
+
+        }
+
+        header{
+            grid-area: header;
+            background-color: antiquewhite;
+            display: flex;
+            justify-content: space-between;
+            padding: 1%;
+
+        }
+
+        header img{
+            width: 6%;
+            border-radius: 50%;
+
+        }
+
+        aside{
+            grid-area: aside;
+            background: rgb(233, 230, 227);
+            width: 100%;
+        }
+
+        ul{
+            padding-left: 10%;
+        }
+
+        ul li{
+            list-style: none;
+            margin-bottom: 10%;
+            padding: 4%;
+            width: 60%;
+            border-radius: 3%;
+            
+        }
+
+        ul li:hover{
+            background: rgb(165, 153, 135);
+        }
+
+        li a{
+            text-decoration: none;
+            color: black;
+        }
+
+        main{
+            grid-area: main;
+            padding: 1%;
+            padding-right: 0;
+            margin-bottom: 10%;
+        }
+
+        main h3{
+            color: black;
+            margin: auto;
+            margin-left: 8%;
+        }
+
+        form{
+            margin: 5%;
+            margin-left: 8%;
+        }
+
+        form input{
+            margin-bottom: 3%;
+            width: 80%;
+            padding: 2%;
+            border: 1px solid gray;
+            border-radius: 0.5rem;
+        }
+
+        form button{
+            background: lightskyblue;
+            color: white;
+            border: none;
+            border-radius: 0.3rem;
+            padding: 1.3%;
+            margin-top: 5%;
+            width: 30%;
+        }
+        form textarea{
+            margin-top: 2%;
+        }
+        
+        
+        footer{
+            grid-area: footer;
+        }
+
+        footer{
+            background: antiquewhite;
+            color: black;
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h2>Quetta Cafe</h2>
+        <img src="images/caffe.png" alt="Quetta Cafe">
+    </header>
+
+    <aside>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </aside>
+    <main>
+        <h3>Contact Us</h3>
+
+        <form action="">
+            <input type="text" name="name" placeholder="Name" required><br>
+            <input type="email" name="email" placeholder="Email" required><br>
+            <input type="number" name="number" placeholder="Phone" required><br>
+            <input type="text" name="address" placeholder="Address" required><br>
+            <label for="desc">Your Message:</label><br>
+            <textarea name="des" id="desc" placeholder="Your Message..." cols="40" rows="3"></textarea><br>
+            <button type="submit">Send</button>
+        </form>
+        </div>
+    </main>
+    <footer><p>© Exitbase 2024. Designed and Developed by Exitbase</p></footer>
+</body>
+</html>

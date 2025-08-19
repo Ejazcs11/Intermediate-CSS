@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-areas: 
+            "header header"
+            "main aside"
+            "footer footer"
+            ;
+            grid-template-columns: 85% 15%;
+
+        }
+
+        header{
+            grid-area: header;
+            background-color: antiquewhite;
+            display: flex;
+            justify-content: space-between;
+            padding: 1%;
+
+        }
+
+        header img{
+            width: 6%;
+            border-radius: 50%;
+
+        }
+
+        aside{
+            grid-area: aside;
+            background: rgb(233, 230, 227);
+            width: 100%;
+        }
+
+        ul{
+            padding-left: 10%;
+        }
+
+        ul li{
+            list-style: none;
+            margin-bottom: 10%;
+            padding: 4%;
+            width: 60%;
+            border-radius: 3%;
+            
+        }
+
+        ul li:hover{
+            background: rgb(165, 153, 135);
+        }
+
+        li a{
+            text-decoration: none;
+            color: black;
+        }
+
+        main{
+            grid-area: main;
+            padding: 1%;
+            padding-right: 0;
+            margin-bottom: 10%;
+        }
+
+        main h2{
+            color: black;
+            margin: auto;
+            margin-left: 18%;
+        }
+
+        .menu-card{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0.5rem;
+            margin-top: 5%;
+        }
+
+        .card{
+            width: 93%;
+            border: 1px solid gray;
+            border-radius: 5%;
+            padding: 3%;
+        }
+
+        .card p{
+            width: 93%;
+            background: white;
+            margin-left: 8%;
+        }
+
+        .card img{
+            width: 100%;
+            border-radius: 5%;
+        }
+
+        .card a{
+            text-decoration: none;
+        }
+
+        .card button{
+            background: lightskyblue;
+            color: white;
+            text-align: center;
+            border: none;
+            width: 60%;
+            padding: 2%;
+            margin-left: 20%;
+            border-radius: 3%;
+            margin-bottom: 0%;
+        }
+
+        
+        footer{
+            grid-area: footer;
+        }
+
+        footer{
+            background: antiquewhite;
+            color: black;
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h2>Quetta Cafe</h2>
+        <img src="images/caffe.png" alt="Quetta Cafe">
+    </header>
+
+    <aside>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </aside>
+    <main>
+        <h2>Selet Your Favorite Dish</h2>
+
+        <div class="menu-card">
+            <div class="card">
+                <img src="images/coffee.jpg" alt="coffee">
+                <p>Fresh ground coffee beans (Arabica for smooth taste, Robusta for stronger taste)
+                Water (filtered, hot ~90–96°C  boiled water (~95°C))</p>
+                <button><a href="order.html">Order</a></button>
+            </div>
+
+            <div class="card">
+                <img src="images/blacktea.jpg" alt="Black Tea">
+                <p>Black tea leaves (Darjeeling, Assam, Ceylon, or Kenyan)
+                 boiled water (~95°C  boiled water (~95°C))</p>
+                <button><a href="order.html">Order</a></button>
+            </div>
+
+            <div class="card">
+                <img src="images/qahwa.jpg" alt="qahwa">
+                <p>Lightly roasted Arabica coffee beans (coarsely ground)
+                Water  boiled water (~95°C)  boiled water (~95°C)  boiled water (~95°C)</p>
+                <button><a href="order.html">Order</a></button>
+            </div>
+             <div class="card">
+                <img src="images/blacktea.jpg" alt="Black Tea">
+                <p>Black tea leaves (Darjeeling, Assam, Ceylon, or Kenyan)
+                 boiled water (~95°C)  boiled water (~95°C)</p>
+                <button><a href="order.html">Order</a></button>
+            </div>
+
+            <div class="card">
+                <img src="images/qahwa.jpg" alt="qahwa">
+                <p>Lightly roasted Arabica coffee beans (coarsely ground)
+                Water  boiled water (~95°C) boiled water (~95°C)  boiled water (~95°C)</p>
+                <button><a href="order.html">Order</a></button>
+            </div>
+            <div class="card">
+                <img src="images/coffee.jpg" alt="coffee">
+                <p>Fresh ground coffee beans (Arabica for smooth taste, Robusta for stronger taste)
+                Water  boiled water (~95°C) (filtered, hot ~90–96°C)</p>
+                <button><a href="order.html">Order</a></button>
+            </div>
+            
+
+            
+        </div>
+    </main>
+    <footer><p>© Exitbase 2024. Designed and Developed by Exitbase</p></footer>
+</body>
+</html>
